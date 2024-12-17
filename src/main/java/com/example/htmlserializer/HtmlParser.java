@@ -14,7 +14,6 @@ public class HtmlParser {
         while (matcher.find()) {
             if (matcher.group(1) != null) { // Match a tag
                 String tag = matcher.group(1).trim(); // Extract the full tag text (e.g., "p class="intro"")
-                HtmlTag.HtmlTagType type;
                 HtmlTag htmlTag;
                 // Track the current opening tag for potential innerHTML assignment
                 if (tag.startsWith("/")) { // It's a closing tag

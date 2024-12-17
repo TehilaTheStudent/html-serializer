@@ -27,15 +27,20 @@ The project focuses on building a tool that:
 
    - Techniques for traversing and modifying the HTML tree structure.
 
-4. **Thread-Safe Singleton Pattern**:
+4. **Asynchronous HTTP Requests with Java Futures**:
+
+   - Implementing non-blocking HTTP requests using Java Futures.
+   - Handling responses and exceptions in an asynchronous manner.
+
+5. **Thread-Safe Singleton Pattern**:
 
    - Implementing `HtmlHelper` as a Singleton for shared state and to avoid repeated file parsing.
 
-5. **Laziness in Iteration**:
+6. **Laziness in Iteration**:
 
    - Understanding the difference between `yield` in C# (`IEnumerable`) and Java's `Iterator` or custom solutions for lazy evaluation.
 
-6. **Client-Side Rendering (CSR)**:
+7. **Client-Side Rendering (CSR)**:
 
    - Realizing its impact on crawlers by observing missing elements that JavaScript dynamically adds to the DOM.
 
