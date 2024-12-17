@@ -3,6 +3,9 @@ package com.example.htmlserializer;
 import java.util.*;
 import java.util.regex.Matcher;
 
+/**
+ * Represents an HTML tag with its attributes and content.
+ */
 public class HtmlTag {
     private String tag; // The raw tag string (e.g., "div class='example'")
     private String name; // The tag name (e.g., "div")
@@ -29,6 +32,12 @@ public class HtmlTag {
         CLOSING,
     }
 
+    /**
+     * Constructs an HtmlTag with the specified tag string and type.
+     *
+     * @param tag  the raw tag string (e.g., "div class='example'")
+     * @param type the type of the tag (SELF_CLOSING, OPENING, CLOSING)
+     */
     public HtmlTag(String tag, HtmlTagType type) {
         this.tag = tag.trim();
         this.type = type;

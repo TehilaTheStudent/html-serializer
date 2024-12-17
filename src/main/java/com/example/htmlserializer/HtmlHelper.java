@@ -57,4 +57,8 @@ public class HtmlHelper {
     public List<String> getHtmlVoidTags() {
         return htmlVoidTags;
     }
+
+    public boolean isValidTagName(String name) {
+        return htmlTags.contains(name) || htmlVoidTags.contains(name);
+    }
 }

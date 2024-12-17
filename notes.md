@@ -1,1 +1,0 @@
-- something new i learned: i can search from child or from parent to find the query with spaces, i have to think about the tree
